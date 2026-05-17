@@ -128,12 +128,152 @@
 
 
 
-year =  input("Enter a year: " )
+# year = int(input("Enter a year: "))
 
-if year % 400 == 0:
-    print("its a leap year")
-else :
-    print("its a leap year ")
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print("Leap Year")
+# else:
+#     print("Not a Leap Year")
+
+#  6.	Write a program to check if a person is eligible to vote.
+
+
+# age = int(input("enter your age : "))
+
+# if age >= 18:
+#     print("enter you can vote")
+# else:
+#     print("you are not eligible : ")
+
+
+#  7.	Write a program that acts as a simple calculator. It should ask the user for two numbers and an operator (+, -, *, /) and perform the corresponding operation. 
+# # Input: Two integers and a mathematical operator.
+
+# a = int(input("enter a 1st number:"))
+# b = int(input("Enter a 2nd number:"))
+# operator = input("enter a operator :" )
+
+# if operator == "+":
+#     print(a + b)
+# elif operator == "-":
+#     print(a - b )
+# elif operator == "*":
+#     print(a*b)
+# elif operator == "/":
+#     print(a / b)
+# else:
+#     print("please enter valid operator")
+
+
+
+# 8.	A student will not be allowed to attend the exam if his/her attendance
+# # isless than 75%. Take following input from user – 
+# # Number of classes held  
+# # Number of classes attended  
+# # And print on the percentage of class attended Is student is allowed 
+# # to attend the exam or not.
+
+
+
+# name = input("Enter a your name :"  )
+# clss =  input("enter your class :")
+# attend = int(input("enter your attendance:"))
+
+# if attend <= 75:
+#     print(f"{name}  from {clss} you can give exam ")
+# else:
+#     print("you can not attend exam ")
+
+
+
+#  9.	A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years. Ask user for their salary and year of service and print the net bonus amount.
+
+# year = int(input("enter year of experience :"))
+# salary = int(input("enter your salry : "))
+
+# if year >= 5:
+#     result = (5 / 100 ) * salary
+#     print("it is your total increment salry ",result + salary )
+#     print("its your 5percent increment ",result)
+# else:
+#     print("you are not eligible for bounus")
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  10. Write a program to determine the type of triangle based on the  lengths
+# #  of its three sides. 
+# # 	All sides equal: "Equilateral" 
+# # 	Two sides equal: "Isosceles" 
+# # 	All sides different: "Scalene" 
+
+
+a = int(input("Enter a first corner:"))
+b = int(input("Enter a second :"))
+c = int(input("enter a number :"))
+
+if a == b and a == c and b == a and b == c and c == b and c == a and c == b:
+    print("Equilateral")
+elif a == b or b == c or a == c:
+    print("isosceles")
+else:
+    print("scalene")
+
+
+
+
+#  3.	Write a program to validate a password. The program should check if the password meets the following conditions: 
+# 	At least 8 characters long. 
+# 	Contains both uppercase and lowercase letters. 
+# 	Contains at least one digit. 
+# Input: A string for the password. 
+# Output: "Valid Password" or "Invalid Password". 
+
+password = input("Enter password: ")
+
+if len(password) >= 8:
+    
+    if any(ch.isupper() for ch in password):
+
+        if any(ch.islower() for ch in password):
+
+            if any(ch.isdigit() for ch in password):
+
+                print("Valid Password")
+
+            else:
+                print("Invalid Password")
+
+        else:
+            print("Invalid Password")
+
+    else:
+        print("Invalid Password")
+
+else:
+    print("Invalid Password")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
