@@ -1,0 +1,24 @@
+# can an absract class have concrete methods (methods with implementation)? 
+# Demonstrate this with a python example.and
+from abc import ABC, abstractmethod
+
+# Abstract Class
+class Animal(ABC):
+
+    @abstractmethod
+    def speak(self):
+        pass
+
+    def movement(self):
+        return "Animals can move in different ways"
+    
+# Child Class
+class Dog(Animal):
+
+    def speak(self):
+        return "Bark!"
+    
+# Creating an object
+dog = Dog()
+print(dog.speak())
+print(dog.movement())

@@ -1,4 +1,8 @@
-# Abstract Class
+# how do you create an object class in pytho using the abc module?provie an exaple?
+from abc import ABC, abstractmethod
+from concurrent.interpreters import create
+
+# # Abstract Class
 # class Animal(ABC):
 
 #     @abstractmethod
